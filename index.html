@@ -163,13 +163,24 @@
 
     <section>
         <h2>AI Insights (Optional)</h2>
-        <p>If you choose to enable AI-powered insights, Pause sends a contextual summary of your symptom patterns to a third-party AI provider using the API key you supply. The available providers and their privacy policies are:</p>
+        <p>Pause offers three ways to use AI-powered insights, all optional:</p>
+
+        <p><strong>Built-in AI (£1.99/month subscription)</strong><br>
+        Your symptom summary is sent through an anonymised proxy server to Anthropic's Claude. No identifying information (name, email, or device identifier beyond a temporary rate-limiting token) is included in these requests. Data is not stored or logged by the proxy. Anthropic's privacy policy applies to the processing of prompts.</p>
+
+        <p><strong>Apple Intelligence</strong><br>
+        Processing happens entirely on your device using Apple's on-device models. No data leaves your device. Available on iPhone 15 Pro or later with iOS 18.1+.</p>
+
+        <p><strong>Your own API key</strong><br>
+        Your symptom summary is sent directly from your device to your chosen provider (Anthropic, OpenAI, or Google) using the key you supply. Your key is stored locally only.</p>
+
+        <p>Third-party provider privacy policies:</p>
         <ul>
             <li><a href="https://www.anthropic.com/privacy" target="_blank">Anthropic (Claude)</a></li>
             <li><a href="https://openai.com/privacy" target="_blank">OpenAI</a></li>
             <li><a href="https://policies.google.com/privacy" target="_blank">Google (Gemini)</a></li>
         </ul>
-        <p>This feature is entirely optional. Pause is fully functional without it.</p>
+        <p>All AI features are entirely optional. Pause is fully functional without them.</p>
     </section>
 
     <section>
