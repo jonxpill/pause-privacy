@@ -127,7 +127,7 @@
 
 <header>
     <h1>Pause</h1>
-    <p>Privacy Policy &mdash; Last updated May 2026</p>
+    <p>Privacy Policy &mdash; Last updated June 2026</p>
 </header>
 
 <main>
@@ -144,7 +144,7 @@
             <li><strong>Personal profile</strong> — first name, birth year, menopause stage, treatment information</li>
             <li><strong>Work profile</strong> — work pattern and role type, used to contextualise your daily guidance</li>
             <li><strong>Lifestyle milestones</strong> — treatments, diet changes, or other events you choose to log</li>
-            <li><strong>Calendar events</strong> — meetings you add within the app for daily readiness guidance</li>
+            <li><strong>Calendar events</strong> — meetings you add within the app, and, if you choose to connect your Apple Calendar, upcoming event titles and dates read from it (with your permission) for daily readiness guidance</li>
             <li><strong>AI API key</strong> — if you use AI Insights, your API key is stored locally on your device only</li>
         </ul>
     </section>
@@ -166,13 +166,16 @@
         <p>Pause offers three ways to use AI-powered insights, all optional:</p>
 
         <p><strong>Built-in AI ($1.99/month subscription)</strong><br>
-        Your symptom summary is sent through an anonymised proxy server to Anthropic's Claude. No identifying information (name, email, or device identifier beyond a temporary rate-limiting token) is included in these requests. Data is not stored or logged by the proxy. Anthropic's privacy policy applies to the processing of prompts.</p>
+        Your symptom summary — including symptom types, severity ratings, any notes you've written, cycle dates, health metrics, and connected calendar event names — is sent through our proxy server to Anthropic's Claude to generate and personalise your insights (including choosing which insights matter most today and refining how they're worded). Your name and email are never included; the only identifier sent is a temporary rate-limiting token. Notes are sent as you wrote them, so avoid including anything in a note you wouldn't want processed. Data is not stored or logged by the proxy. Anthropic's privacy policy applies to the processing of prompts.</p>
 
         <p><strong>Apple Intelligence</strong><br>
         Processing happens entirely on your device using Apple's on-device models. No data leaves your device. Available on supported devices with iOS 26 or later.</p>
 
         <p><strong>Your own API key</strong><br>
-        Your symptom summary is sent directly from your device to your chosen provider (Anthropic, OpenAI, or Google) using the key you supply. Your key is stored locally only.</p>
+        The same symptom summary is sent directly from your device to your chosen provider (Anthropic, OpenAI, or Google) using the key you supply. Your key is stored locally only.</p>
+
+        <p><strong>On-device analysis</strong><br>
+        Some analysis always stays on your device regardless of provider — for example, structure extracted from your notes to improve trigger detection is computed with Apple's on-device models only and never transmitted.</p>
 
         <p>Third-party provider privacy policies:</p>
         <ul>
