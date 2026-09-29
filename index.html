@@ -127,87 +127,103 @@
 
 <header>
     <h1>Pause</h1>
-    <p>Privacy Policy &mdash; Last updated June 2026</p>
+    <p>Privacy Policy &mdash; Last updated September 2026</p>
 </header>
 
 <main>
 
     <div class="intro">
-        <strong>Your health data stays on your device.</strong> Pause does not operate any servers or databases. We never see, store, or sell your personal information.
+        <strong>Your health data stays on your device.</strong> Pause has no accounts and no database of users, and we never sell your information. Your data leaves your phone only if you turn on AI insights with a cloud provider and agree first, or if you share a report yourself.
     </div>
 
     <section>
-        <h2>What Pause Collects</h2>
-        <p>Pause collects only what you choose to enter directly:</p>
+        <h2>What Pause Stores</h2>
+        <p>Pause stores only what you enter or allow it to read, on your device:</p>
         <ul>
-            <li><strong>Health &amp; symptom data</strong> — daily logs, severity ratings, period tracking, mood, energy</li>
-            <li><strong>Personal profile</strong> — first name, birth year, menopause stage, treatment information</li>
-            <li><strong>Work profile</strong> — work pattern and role type, used to contextualise your daily guidance</li>
-            <li><strong>Lifestyle milestones</strong> — treatments, diet changes, or other events you choose to log</li>
-            <li><strong>Calendar events</strong> — meetings you add within the app, and, if you choose to connect your Apple Calendar, upcoming event titles and dates read from it (with your permission) for daily readiness guidance</li>
-            <li><strong>AI API key</strong> — if you use AI Insights, your API key is stored locally on your device only</li>
+            <li><strong>Health &amp; symptom logs</strong> — symptoms with your severity rating, time and any notes; &ldquo;how did today land&rdquo; ratings; periods; weight, blood pressure, heart rate and nutrition you log</li>
+            <li><strong>Personal profile</strong> — first name, birth year, menopause stage, cycle notes, and treatments with any dates you add</li>
+            <li><strong>Work profile</strong> — work pattern and role type, used to shape your daily guidance</li>
+            <li><strong>Lifestyle milestones and strategies</strong> — changes you mark (such as starting a treatment) and the strategies you write or adopt in your Playbook</li>
+            <li><strong>Calendar events</strong> — meetings you add in the app and, if you connect Apple Calendar, upcoming event titles and dates read with your permission</li>
+            <li><strong>AI API key</strong> — if you use your own AI key, it is kept in your device&rsquo;s Keychain</li>
         </ul>
     </section>
 
     <section>
         <h2>Where Your Data Lives</h2>
-        <p>All data is stored <strong>locally on your device</strong> using Apple's SwiftData framework. Pause has no backend servers, no cloud database, and no account system.</p>
-        <div class="highlight">Your data never leaves your device unless you explicitly use the optional AI Insights feature.</div>
+        <p>Everything is stored <strong>on your device</strong>, in a private container that only Pause and its own widget can read. There is no cloud database and no account. Like other app data, it is included in your device backups under Apple&rsquo;s protections.</p>
+        <p>Pause also keeps the date you first installed it in your device&rsquo;s Keychain, so the 30-day free trial can&rsquo;t restart after a reinstall. It holds nothing else and never leaves your device.</p>
+        <div class="highlight">Your data never leaves your device unless you turn on AI insights with a cloud provider and agree to it, or you choose to share a report.</div>
     </section>
 
     <section>
-        <h2>Apple HealthKit</h2>
-        <p>With your permission, Pause can read data from Apple Health — sleep, heart rate, blood pressure, weight, and menstrual cycle data — to enrich your symptom patterns and daily readiness score.</p>
-        <p>Pause may also write your logged data back to Apple Health. HealthKit data is governed by Apple's privacy framework and is <strong>never used for advertising or shared outside the app</strong>.</p>
+        <h2>Widget</h2>
+        <p>The Pause widget shows your readiness word, a strategy for this part of the day, and one-tap log buttons. It is worked out on your device and nothing is sent anywhere. A widget is visible to anyone who can see your screen, and the Lock Screen version shows your readiness word while your phone is locked, so only add it where you&rsquo;re comfortable with that.</p>
+    </section>
+
+    <section>
+        <h2>Siri, Shortcuts &amp; Spotlight</h2>
+        <p>You can ask Siri to log a symptom or to answer questions about your own logs, such as your most common symptoms last week. Pause works out those answers on your device. Your voice request is handled by Apple under <a href="https://www.apple.com/legal/privacy/" target="_blank">Apple&rsquo;s privacy policy</a>.</p>
+        <p><strong>&ldquo;Let Siri understand my Pause data&rdquo;</strong> is off unless you turn it on (Settings &rarr; Siri &amp; Apple Intelligence, iOS 18 or later). When on, Pause adds each logged day&rsquo;s symptoms and readiness word, your strategies, and the names of patterns Pause has spotted to Apple&rsquo;s private on-device index used by Siri, Spotlight and Apple Intelligence. Your notes are never added, though a pattern&rsquo;s name can come from a word you used in a note. Turn the setting off, or reset Pause, and it is removed.</p>
+    </section>
+
+    <section>
+        <h2>Apple Health</h2>
+        <p>With your permission, Pause reads sleep, heart rate, blood pressure, weight and menstrual flow from Apple Health to enrich your patterns and your daily readiness. Night-sweat detection uses your sleep and heart-rate data and runs on your device. If you allow it, Pause writes the periods you log back to Apple Health.</p>
+        <p>Apple Health data is <strong>never used for advertising or marketing</strong>. It stays on your device unless you turn on a cloud AI provider and agree: then night sweats detected from Apple Health (logged as symptoms) and summaries such as an average blood-pressure reading can be part of what is sent to generate your insights.</p>
     </section>
 
     <section>
         <h2>AI Insights (Optional)</h2>
-        <p>Pause offers three ways to use AI-powered insights, all optional:</p>
+        <p>AI insights are optional and Pause works fully without them. <strong>Before any of your data is sent to an AI company, Pause shows you what is sent and who receives it, and asks for your OK.</strong> That OK is recorded per company, so agreeing for one never covers another.</p>
 
-        <p><strong>Built-in AI ($1.99/month subscription)</strong><br>
-        Your symptom summary — including symptom types, severity ratings, any notes you've written, cycle dates, health metrics, and connected calendar event names — is sent through our proxy server to Anthropic's Claude to generate and personalise your insights (including choosing which insights matter most today and refining how they're worded). Your name and email are never included; the only identifier sent is a temporary rate-limiting token. Notes are sent as you wrote them, so avoid including anything in a note you wouldn't want processed. Data is not stored or logged by the proxy. Anthropic's privacy policy applies to the processing of prompts.</p>
+        <p><strong>What is sent</strong><br>
+        Your symptom types and severity ratings, any notes you&rsquo;ve written (as you wrote them), cycle dates and flow, your stage, treatments and lifestyle changes with their dates, your readiness word, patterns Pause has spotted, and, if you&rsquo;ve connected a calendar, upcoming event titles and dates. Your name and email are never included. This is used for your AI analysis, your personalised Learn article, and choosing which of your insights to show first.</p>
+
+        <p><strong>Built-in AI (included in the free trial, then $1.99/month)</strong><br>
+        Sent through Pause&rsquo;s own relay server to Anthropic&rsquo;s Claude. The relay passes the request on and stores nothing. To cap daily use, it also receives a device identifier (Apple&rsquo;s identifier for apps from the same developer), which is not linked to your name. Anthropic processes the request under its privacy policy and doesn&rsquo;t train its models on data sent through its API.</p>
+
+        <p><strong>Your own API key (Anthropic, OpenAI or Google)</strong><br>
+        Sent directly from your device to the provider you chose, using your key. That provider&rsquo;s terms apply. Anthropic and OpenAI don&rsquo;t train on API data by default; on Gemini&rsquo;s free tier, Google may use it to improve its services.</p>
 
         <p><strong>Apple Intelligence</strong><br>
-        Processing happens entirely on your device using Apple's on-device models. No data leaves your device. Available on supported devices with iOS 26 or later.</p>
-
-        <p><strong>Your own API key</strong><br>
-        The same symptom summary is sent directly from your device to your chosen provider (Anthropic, OpenAI, or Google) using the key you supply. Your key is stored locally only.</p>
-
-        <p><strong>On-device analysis</strong><br>
-        Some analysis always stays on your device regardless of provider — for example, structure extracted from your notes to improve trigger detection is computed with Apple's on-device models only and never transmitted.</p>
+        Runs entirely on your device using Apple&rsquo;s on-device model. Nothing is sent to any server, and no consent is needed. Available on supported devices with iOS 26 or later.</p>
 
         <p>Third-party provider privacy policies:</p>
         <ul>
             <li><a href="https://www.anthropic.com/privacy" target="_blank">Anthropic (Claude)</a></li>
-            <li><a href="https://openai.com/privacy" target="_blank">OpenAI</a></li>
+            <li><a href="https://openai.com/policies/privacy-policy" target="_blank">OpenAI</a></li>
             <li><a href="https://policies.google.com/privacy" target="_blank">Google (Gemini)</a></li>
         </ul>
-        <p>All AI features are entirely optional. Pause is fully functional without them.</p>
+    </section>
+
+    <section>
+        <h2>Reports You Share</h2>
+        <p>The symptom report for your doctor and the work adjustments summary are created on your device. You can read either one in Pause first; it leaves your phone only if you tap Share and choose where to send it. The symptom report can include your recent notes, periods and health readings for the range you pick. The work summary includes your first name, counts from your log, and anything you type into it.</p>
     </section>
 
     <section>
         <h2>Notifications</h2>
-        <p>Pause uses local notifications only. Notifications are scheduled entirely on your device based on your logged data. No notification data is sent to any external server.</p>
+        <p>Pause uses local notifications only. They are scheduled on your device from your own data, and nothing about them is sent to any server.</p>
     </section>
 
     <section>
         <h2>What Pause Does Not Do</h2>
         <ul class="no-list">
-            <li>Collect data on our servers</li>
             <li>Sell your data</li>
             <li>Use your data for advertising</li>
-            <li>Share your data with third parties</li>
             <li>Use tracking or analytics SDKs</li>
+            <li>Keep your data on our servers</li>
+            <li>Share your data with anyone other than the AI provider you agree to, or the people you send a report to</li>
             <li>Require an account or login</li>
         </ul>
     </section>
 
     <section>
         <h2>Data Retention &amp; Deletion</h2>
-        <p>Your logs, profile, and tracked data remain on your device until you choose to remove them. You can delete everything at any time using <strong>&ldquo;Reset all data&rdquo;</strong> in Settings, which permanently erases your logs and profile from the device.</p>
-        <p>Any API key you enter for your own AI provider is stored in your device&rsquo;s Keychain and can be cleared in Settings.</p>
-        <p>When AI features are enabled, the data sent to your chosen AI provider (or, for built-in AI, through the proxy to Anthropic) is processed according to that provider&rsquo;s own privacy policy. Pause does not retain this data on any server.</p>
+        <p>Your data stays on your device until you remove it. <strong>Settings &rarr; Reset all data</strong> permanently erases your logs, profile and strategies, and removes what Siri and the widget show. Deleting the app removes its data from your device too.</p>
+        <p>An API key you entered can be cleared in Settings. Keychain items such as that key and the trial start date can remain on the device after the app is deleted, so clear your key in Settings first if you want it gone.</p>
+        <p>Data sent to an AI provider is handled under that provider&rsquo;s policy. Pause&rsquo;s relay does not retain it.</p>
     </section>
 
     <section>
@@ -217,7 +233,7 @@
 
     <section>
         <h2>Changes to This Policy</h2>
-        <p>If we make material changes to this policy, we will update the date at the top of this page.</p>
+        <p>If we make material changes to this policy, we will update it here and change the date at the top of this page.</p>
     </section>
 
     <section>
